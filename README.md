@@ -4,7 +4,7 @@ Iadixcore
 [![Build Status](https://travis-ci.org/bitpay/bitcore.svg?branch=master)](https://travis-ci.org/bitpay/bitcore)
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore.svg)](https://coveralls.io/r/bitpay/bitcore)
 
-A pure, powerful core for your bitcoin project.
+A pure, powerful core for your iadixcoin project.
 
 Iadixcore is a complete, native interface to the Iadixcoin network, and provides the core functionality needed to develop apps for iadixcoin based on bitcore.
 
@@ -22,7 +22,7 @@ Iadixcore runs on [node](http://nodejs.org/), and can be installed via [npm](htt
 npm install iadixcore
 ```
 
-It is a collection of objects useful to bitcoin applications; class-like idioms are enabled via [Soop](https://github.com/bitpay/soop). In most cases, a developer will require the object's class directly. For instance:
+It is a collection of objects useful to iadixcoin applications; class-like idioms are enabled via [Soop](https://github.com/bitpay/soop). In most cases, a developer will require the object's class directly. For instance:
 
 ```javascript
 var bitcore = require('iadixcore');
