@@ -133,5 +133,5 @@ And then open coverage/lcov-report/index.html in your browser.
 
 **Code released under [the MIT license](https://github.com/iadix/iadixcore/blob/master/LICENSE).**
 
-Copyright 2013-2014 BitPay, Inc. Iadixcore is a trademark maintained by Iadix.
+Copyright 2016-2014 Iadix. Iadixcore is a trademark maintained by Iadix.
 
