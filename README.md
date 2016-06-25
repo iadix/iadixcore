@@ -1,4 +1,4 @@
-Bitcore
+Iadixcore
 =======
 
 [![Build Status](https://travis-ci.org/bitpay/bitcore.svg?branch=master)](https://travis-ci.org/bitpay/bitcore)
@@ -6,26 +6,26 @@ Bitcore
 
 A pure, powerful core for your bitcoin project.
 
-Bitcore is a complete, native interface to the Bitcoin network, and provides the core functionality needed to develop apps for bitcoin.
+Iadixcore is a complete, native interface to the Iadixcoin network, and provides the core functionality needed to develop apps for iadixcoin based on bitcore.
 
 #Principles
 
-Bitcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Bitcoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
+Iadixcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Iadixcoin network allows for highly resilient iadixcoin infrastructure, and the developer community needs reliable, open-source tools to implement iadixcoin apps and services.
 
-**Bitcore unchains developers from fallible, centralized APIs, and provides the tools to interact with the real Bitcoin network.**
+**Iadixcore unchains developers from fallible, centralized APIs, and provides the tools to interact with the real Iadixcoin network.**
 
 #Get Started
 
-Bitcore runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+Iadixcore runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```
-npm install bitcore
+npm install iadixcore
 ```
 
 It is a collection of objects useful to bitcoin applications; class-like idioms are enabled via [Soop](https://github.com/bitpay/soop). In most cases, a developer will require the object's class directly. For instance:
 
 ```javascript
-var bitcore = require('bitcore');
+var bitcore = require('iadixcore');
 var Address = bitcore.Address;
 var Transaction = bitcore.Transaction;
 var PeerManager = bitcore.PeerManager;
@@ -48,23 +48,19 @@ Javascript files available at [/examples](/examples) folder.
 
 Please use at your own risk.
 
-Bitcore is still under heavy development and not quite ready for "drop-in" production use. If you find a security issue, please email security@bitcore.io.
-
-#Contributing
-
-Bitcore needs some developer love. Please send pull requests for bug fixes, code optimization, and ideas for improvement.
+Iadixcore is still under heavy development and not quite ready for "drop-in" production use. If you find a security issue, please email security@bitcore.io.
 
 #Browser support
 
 ## Building the browser bundle
 
-To build bitcore full bundle for the browser (this is automatically executed after you run `npm install`):
+To build iadixcore full bundle for the browser (this is automatically executed after you run `npm install`):
 
 ```
 node browser/build.js -a
 ```
 
-This will generate a `browser/bundle.js` file which you can include in your HTML to use bitcore in the browser.
+This will generate a `browser/bundle.js` file which you can include in your HTML to use iadixcore in the browser.
 
 ##Example browser usage
 
@@ -76,7 +72,7 @@ From example/simple.html
   <body>
     <script src="../browser/bundle.js"></script>
     <script>
-      var bitcore = require('bitcore');
+      var bitcore = require('iadixcore');
       var Address = bitcore.Address;
       var a = new Address('1KerhGhLn3SYBEQwby7VyVMWf16fXQUj5d');
       console.log('1KerhGhLn3SYBEQwby7VyVMWf16fXQUj5d is valid? '+a.isValid());
@@ -89,25 +85,25 @@ You can check a more complex usage example at examples/example.html.
 
 ## Generating a customized browser bundle
 
-To build the main bitcore bundle, run:
+To build the main iadixcore bundle, run:
 
 ```
 node browser/build.js -m
 ```
 
-To build all features into the bitcore bundle (which will lead to a large filesize), run:
+To build all features into the iadixcore bundle (which will lead to a large filesize), run:
 
 ```
 node browser/build.js -a
 ```
 
-To generate a customized bitcore bundle, you can specify which submodules you want to include in it with the -s option:
+To generate a customized iadixcore bundle, you can specify which submodules you want to include in it with the -s option:
 
 ```
 node browser/build.js -s lib/Transaction,lib/Address
 ```
 
-This will generate a `browser/bundle.js` containing only the Transaction and Address class, with all their dependencies.  Use this option if you are not using the whole bitcore library, to optimize the bundle size, script loading time, and general resource usage.
+This will generate a `browser/bundle.js` containing only the Transaction and Address class, with all their dependencies.  Use this option if you are not using the whole iadixcore library, to optimize the bundle size, script loading time, and general resource usage.
 
 ## Tests
 
@@ -135,8 +131,7 @@ And then open coverage/lcov-report/index.html in your browser.
 
 #License
 
-**Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).**
+**Code released under [the MIT license](https://github.com/iadix/iadixcore/blob/master/LICENSE).**
 
-Copyright 2013-2014 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
+Copyright 2013-2014 BitPay, Inc. Iadixcore is a trademark maintained by Iadix.
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bitpay/bitcore/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
